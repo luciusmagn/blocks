@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: 'Brass Mono Comfortable';
+  src: url('/BrassMonoComfortableRegular.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+    background-color: #F5F2E8;
+    font-family: 'Brass Mono Comfortable', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+span, br {
+    display: flex;
+}
+
+#clock::before {
+    content: "blocks:";
+    color: #BBB9B4;
+    font-size: 0.25em;
+}
+#clock {
+    font-size: 5em;
+    display: flex;
+    font-weight: 900;
+    color: #4A4946;
+    flex-direction: column;
+}
+
+#secs {
+    padding-left: 0.5em;
+    color: #7B7974;
+}
+
+#secs::before {
+    content: "+";
+}
+#secs::after {
+    content: "s";
+}

@@ -55,7 +55,7 @@ fn main() {
             w.set_text_content(Some(&format!("{}", text.as_string().unwrap())));
         }
 
-        let ws = WebSocket::new("ws://blocks.mag.wiki:3012").unwrap();
+        let ws = WebSocket::new("wss://blocks.mag.wiki").unwrap();
         let onmessage_callback = Closure::wrap(
             Box::new(move |e| recv_ws_msg(e).unwrap_or(())) as Box<dyn FnMut(MessageEvent)>
         );

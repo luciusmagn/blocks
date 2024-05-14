@@ -9,10 +9,10 @@ edition = "2021"
 futures = "0.3.21"
 js-sys = "0.3.58"
 livid = "0.2.12"
-reqwest = { version = "0.11.11" }
-wasm-bindgen = "0.2.80"
-wasm-bindgen-futures = "0.4.30"
-web-sys = { version = "0.3.57", features = [
+reqwest = "0.11.11"
+wasm-bindgen = "0.2.81"
+wasm-bindgen-futures = "0.4.31"
+web-sys = { version = "0.3.58", features = [
 	"Response",
 	"Request",
 	"RequestInit",
@@ -24,4 +24,4 @@ web-sys = { version = "0.3.57", features = [
 	"FileReader",
 	"MessageEvent",
 	"ProgressEvent",
-]}
+] }
